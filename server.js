@@ -63,5 +63,5 @@ server.post('/upload', (req, res) => {
   })
 })
 
-console.log('http://localhost:3000/');
-server.listen(3000)
+console.log('Listening at http://localhost:'+process.env.PORT || 5000);
+server.listen(process.env.PORT || 5000)
